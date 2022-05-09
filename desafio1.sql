@@ -55,7 +55,7 @@ CREATE TABLE SpotifyClone.following(
     users_id INT NOT NULL,
     FOREIGN KEY (users_id),
     REFERENCES SpotifyClone.users(id),
-    artist_id INT NOT NULL,
+    follow INT NOT NULL,
     FOREIGN KEY (artist_id),
     REFERENCES SpotifyClone.artist(id),
     
@@ -177,7 +177,7 @@ VALUES
 
 INSERT INTO SpotifyClone.songs (album_id, name_songs, duration_seconds)
 VALUES
-   (1,	"Soul For Us",	200),
+   (1,	'Soul For Us',	200),
    (1,	"Dance With Her Own", 116),
    (1,	"Reflections Of Magic", 163),
    (2,	"Troubles Of My Inner Fire", 203),
@@ -218,7 +218,7 @@ VALUES
    (10, "Baby", 136),
    (10, "You Make Me Feel So..", 83);
 
-INSERT INTO SpotifyClone.following (users_id, artist_id)
+INSERT INTO SpotifyClone.following (follow, artist_id)
 VALUES
    (1, 1),
    (1, 4),
