@@ -133,8 +133,8 @@ VALUES
 INSERT INTO SpotifyClone.songs (album_id, name_songs, duration_seconds)
 VALUES
    (1,	'Soul For Us',	200),
-   (1,	"Dance With Her Own", 116),
    (1,	"Reflections Of Magic", 163),
+   (1,	"Dance With Her Own", 116),
    (2,	"Troubles Of My Inner Fire", 203),
    (2,	"Time Fireworks", 152),
    (3,	"Magic Circus", 105),
